@@ -6,7 +6,7 @@
 
     <groupId>com.boyninja1555.floorui</groupId>
     <artifactId>floorui</artifactId>
-    <version>0.1.0.DEV</version>
+    <version>0.1.1.DEV</version>
     <packaging>jar</packaging>
 
     <name>FloorUI</name>

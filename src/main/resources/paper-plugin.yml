@@ -1,6 +1,6 @@
 name: FloorUI
 description: "Inventory-based GUI library, made for beginners"
-version: "0.1.0.DEV"
+version: "0.1.1.DEV"
 main: com.boyninja1555.floorui.FloorUI
 api-version: "1.21"
 folia-supported: true
