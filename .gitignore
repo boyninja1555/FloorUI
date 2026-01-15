@@ -1,6 +1,7 @@
 target/
 
 .idea/
+.m2/
 *.iml
 
 server/
