@@ -19,6 +19,12 @@ Read more on this [here](version-plans.md), the Version Plans file
 
 ---
 
+## Contributing
+
+Anytime you believe your contributions helped, please update the `authors` field in [paper-plugin.yml](src/main/resources/paper-plugin.yml). Documentation may only be updated if the API changed, but the [README](README.md) and [Version Plans](version-plans.md) files are off-limits due to how much the project depends on them being what they are.
+
+---
+
 ## Examples
 
 Moderator Menu
