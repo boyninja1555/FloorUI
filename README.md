@@ -1,5 +1,7 @@
-# <center>FloorUI</center>
-**<center>Inventory-based GUI library, made for beginners</center>**
+<div>
+    <h1 align="center">FloorUI</h1>
+    <p align="center">Inventory-based GUI library, made for beginners</p>
+</div>
 
 ---
 
