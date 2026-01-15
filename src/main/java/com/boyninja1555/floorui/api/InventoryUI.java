@@ -141,6 +141,17 @@ public class InventoryUI implements InventoryHolder, Listener {
     }
 
     /**
+     * Sets a location in the UI to a button
+     * @param x Target slot represented as an XY location in the UI (x)
+     * @param y Target slot represented as an XY location in the UI (y)
+     * @param button Built button
+     */
+    public void setButton(int x, int y, UIButton button) {
+        buttons.put(new Vector2d(x, y), button);
+        update();
+    }
+
+    /**
      * Adds a button to a location in the UI
      * @param location Target slot represented as an XY location in the UI
      * @param button Built button
@@ -148,6 +159,16 @@ public class InventoryUI implements InventoryHolder, Listener {
     public void addButton(Vector2d location, UIButton button) {
         setButton(location, button);
         update();
+    }
+
+    /**
+     * Adds a button to a location in the UI
+     * @param x Target slot represented as an XY location in the UI (x)
+     * @param y Target slot represented as an XY location in the UI (y)
+     * @param button Built button
+     */
+    public void addButton(int x, int y, UIButton button) {
+        addButton(new Vector2d(x, y), button);
     }
 
     /**
@@ -163,6 +184,16 @@ public class InventoryUI implements InventoryHolder, Listener {
     }
 
     /**
+     * Gets a button by its XY location
+     * @param x Target slot represented as an XY location in the UI (x)
+     * @param y Target slot represented as an XY location in the UI (y)
+     * @return UIButton - Button found, <code>null</code> if not found
+     */
+    public UIButton getButton(int x, int y) {
+        return getButton(new Vector2d(x, y));
+    }
+
+    /**
      * Removes a button by its XY location
      * @param location Target slot represented as an XY location in the UI
      */
@@ -172,6 +203,15 @@ public class InventoryUI implements InventoryHolder, Listener {
 
         buttons.remove(location);
         update();
+    }
+
+    /**
+     * Removes a button by its XY location
+     * @param x Target slot represented as an XY location in the UI (x)
+     * @param y Target slot represented as an XY location in the UI (y)
+     */
+    public void removeButton(int x, int y) {
+        removeButton(new Vector2d(x, y));
     }
 
     /**
